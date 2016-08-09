@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">本を発送する</string>
+
+    <string name="textView1">"交換リクエストが届きました"</string>
+    <string name="textView2">"1.届いた宛名ラベルをダウンロードしましょう。"</string>
+    <string name="buttonDownload">"ダウンロードする"</string>
+
+    <string name="textView3">"2.宛名ラベルをプリントして梱包した本に貼り付け、\n本を発送してください。"</string>
+    <string name="textView4">"本の梱包のやりかた>"</string>
+
+    <string name="textView5">"3.同梱を希望している人に発送する場合は\n選択してください。"</string>
+
+    <string name="radioButtonBundle">"同梱しました！"</string>
+    <string name="radioButtonNotBundle">"ごめんなさい、同梱できませんでした‥"</string>
+
+    <string name="buttonCancel">"キャンセル"</string>
+    <string name="buttonSending">"発送完了"</string>
+
+</resources>

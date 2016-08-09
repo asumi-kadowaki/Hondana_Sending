@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!--交換リクエストが届きました-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="6dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView1"
+            android:text="@string/textView1"
+            android:layout_weight="0.04" />
+
+
+        <!--届いた宛名ラベルをダウンロードしましょう。-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingBottom="6dip"
+            android:id="@+id/textView2"
+            android:text="@string/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <!--ダウンロードボタン-->
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonDownload"
+            android:id="@+id/buttonDownload"
+            android:layout_gravity="center_horizontal"
+            android:background="#00a497"/>
+
+
+
+
+        <!--区切り線-->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff106510"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginBottom="12dip" />
+
+
+        <!--梱包して宛名ラベルを貼り付け、発送してください。-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingBottom="6dip"
+            android:id="@+id/textView3"
+            android:text="@string/textView3"
+            android:layout_gravity="center_horizontal" />
+
+
+        <!--梱包のやり方-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView4"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:textColor="#FF0000" />
+
+        <!--区切り線-->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ff106510"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginBottom="12dip" />
+
+
+
+        <!--同梱を希望している人に発送する場合はチェックを入れてください。-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingBottom="6dip"
+            android:text="@string/textView5"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal" />
+
+
+        <RadioGroup android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/RadioGroup" >
+
+        <!--同梱しました！-->
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/radioButtonBundle"
+            android:id="@+id/radioButtonBundle"
+            android:checked="false" />
+
+        <!--ごめんなさい、同梱できませんでした‥-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/radioButtonNotBundle"
+            android:id="@+id/radioButtonNotBundle"
+            android:checked="false" />
+
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/bottom_bar"
+            android:gravity="center_vertical">
+
+
+
+
+            <!--下部に固定されたキャンセルボタン-->
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCancel"
+                android:text="@string/buttonCancel"
+                android:textColor="#00a497"
+                android:background="#180614"/>
+
+            <!--下部に固定されたリクエスト完了ボタン-->
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonRequest"
+                android:text="@string/buttonSending"
+                android:background="#00a497" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
